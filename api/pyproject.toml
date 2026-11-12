@@ -1,0 +1,22 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.20.1",
+    "asyncpg>=0.32.0",
+    "dishka>=1.10.1",
+    "fastapi>=0.162.0",
+    "faststream[rabbit]>=0.7.8",
+    "pydantic-settings>=2.16.2",
+    "shared",
+    "sqlalchemy[asyncio]>=2.1.6",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[tool.uv.sources]
+shared = { path = "../shared", editable = true }
+
